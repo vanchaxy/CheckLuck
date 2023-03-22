@@ -28,7 +28,7 @@ public class CheckLuck : TerrariaPlugin
     private void SendLuck(CommandArgs args)
     {
         float luck = args.Player.TPlayer.luck;
-        string array = $"Current luck is {luck}.";
+        string msg = $"Current luck is {luck}.";
         var color = luck switch
         {
             >= 0.75f => Color.DarkGreen,
@@ -39,6 +39,6 @@ public class CheckLuck : TerrariaPlugin
             >= -0.15f => Color.Coral,
             _ => Color.DarkRed,
         };
-        args.Player.SendMessage(array, color);
+        args.Player.SendMessage(msg, color);
     }
 }
