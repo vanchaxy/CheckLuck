@@ -7,7 +7,7 @@ A simple plugin for TShock that allows players to check their current luck statu
 
 ## Installation
 1. Download the latest release from the Releases page.
-2. Copy the CheckLuck.dll file to the TShock server's "plugins" folder.
+2. Copy the `CheckLuck.dll` file to the TShock server's `ServerPlugins` folder.
 3. Start or restart the TShock server.
 
 ## Usage
